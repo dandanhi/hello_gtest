@@ -12,8 +12,8 @@ int16_t *hex2int16(char *string)
     return NULL;
 
   size_t dlength = slength / 4;
-  int16_t *data = (int16_t *)malloc(dlength);
-  memset(data, 0, dlength);
+  int16_t *data = (int16_t *)malloc(dlength*2);
+  memset(data, 0, dlength*2);
 
   size_t index = 0;
   while (index < slength)
